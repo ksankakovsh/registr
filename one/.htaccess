@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9]+)$ http://$1.borisovden.e-autopay.com [L,QSA]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ http://$2.$1.borisovden.e-autopay.com [L,QSA]
