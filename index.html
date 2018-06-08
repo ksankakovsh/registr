@@ -5,458 +5,11 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="css/ouibounce.min.css">
-    <style>
-.ouibounce-init{font-family:'Open Sans', sans-serif;display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;}
-.ouibounce-init .underlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.5);cursor:pointer;-webkit-animation:fadein 0.5s;animation:fadein 0.5s;}
-.ouibounce-init .ouibounce-modal{width:100%;height:auto;max-height:690px;background-color:#e5e5e5;z-index:1;position:absolute;margin:auto;top:0;right:0;bottom:0;left:0;border-radius:4px;-webkit-animation:popin 0.3s;animation:popin 0.3s;max-width:1200px;border-radius:30px;}
-.ouibounce-init .ouibounce-modal-title{font-size:18px;background-color:#e5e5e5;color:#000;padding:10px;margin:0;border-radius:4px 4px 0 0;text-align:center;margin:0 auto;max-width:95%;}
-.ouibounce-init h3{color:#ff1500;font-size:42px;margin:16px;text-transform:uppercase;font-weight:normal;font-family:MyriadProRegular;max-width:100%;}
-.ouibounce-init .ouibounce-modal-body{padding:0px 35px;font-size:0.9em;}
-.ouibounce-init form{text-align:center;margin-top:15px;}
-.ouibounce-init form input[type=text]{padding:12px; padding-top: 0 !important; padding-bottom: 0 !important;max-width:300px;border:1px solid #806f6f;-webkit-font-smoothing:antialiased;margin-bottom:10px;height:40px !important;width:100%;background:#e1e1e1;}
-.ouibounce-init form input[type=tel]{padding:12px; padding-top: 0 !important; padding-bottom: 0 !important;max-width:300px;border:1px solid #806f6f;-webkit-font-smoothing:antialiased;margin-bottom:10px;height:40px !important;width:100%;background:#e1e1e1;}
-.ouibounce-init form input[type=email]{padding:12px; padding-top: 0 !important; padding-bottom: 0 !important;max-width:300px;border:1px solid #806f6f;-webkit-font-smoothing:antialiased;margin-bottom:10px;height:40px !important;width:100%;background:#e1e1e1;}
-.ouibounce-init form input[type=submit]{text-transform:uppercase;font-size:28px;border-radius:0px;background-color:#ED022D;border:none;cursor:pointer;-webkit-font-smoothing:antialiased;width:100%;max-width:300px;margin:0 auto;font-family:MyriadProRegular;border:2px solid #f17479;height:65px;padding:0px;line-height: 65px;}
-.ouibounce-init .modal-footer{position:absolute;bottom:20px;text-align:center;width:100%;}
-.ouibounce-init .ouibounce-modal-footer p{text-transform:capitalize;cursor:pointer;display:inline;border-bottom:1px solid #344a5f;}
-.ouibounce-init .down-title{
-    padding-bottom:40px;
-    font-size: 37px;
-}
-.ouibounce-init .closed {
-    position: absolute;
-    padding: 0;
-    top: 10px;
-    right: 10px;
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    border: 2px solid transparent;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 20px;
-    -webkit-transition: background-color ease .7s;
-    transition: background-color ease .7s; }
-
-.ouibounce-init .closed:before {
-    color: red;
-    content: '\2715';
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-    font-size: 44px;
-    font-weight: bold;
-    position: absolute;
-    top: 12px;
-    left: 4px;
-}
-
-.body-fixed {
-    position: fixed !important;
-    width: 100% !important;
-}
-@media (max-width: 900px) {
-    #popup__toggle {
-        transform: scale(0.5);
-        /*bottom: -20px;*/
-        right: -30px;
-    }
-}
-
-@media (max-width: 700px) {
-    .plusik {
-        font-size: 70px !important;
-    }
-}
-
-h3.zak {
-    color: #000 !important;
-}
-
-:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
-}
-
-.ouibounce-init .down-title {
-    padding-bottom: 0 !important;
-}
-
-.voprosik {
-    top: 152px !important;
-}
-.cc{
-    text-decoration: none;
-    color:#fff;
-}
-.cc:hover{
-    color:#fff;
-    text-decoration: none;
-}
-.textobm {
-    margin-top: 80px !important;
-}
-
-@media (min-width:300px) and (max-width:680px){
-    .ouibounce-init form input[type=submit]{
-        font-size:22px;
-    }
-    .ouibounce-init .down-title{
-        padding-bottom:0px;
-        font-size: 20px;
-    }
-    .ouibounce-init h3{
-        font-size: 23px;
-    }
-}
-</style>
-    <!--styles css-->
-    <style type="text/css">
-    	 
-/*подключение шрифтов*/
-@font-face { font-family: 'Open Sans', sans-serif;
-	src: url(fonts/SourceSansPro-Regular.ttf);
-}
-
-.modal-header p { text-align: center;   font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;}
-.modal-body input[type="text"] {width: 304px;
-    height: 42px;
-    padding-left: 25px;
-    border-width: 1px;
-    border-color: #DCDCDC; border-style: solid;
-    background-color: transparent;
-    position: relative;
-    margin-bottom: 5px;
-    }
-.modal-footer button {width: 304px;
-    height: 42px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #FFFFFF;
-    background-color: #F5C709;
-    border-radius: 1px;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;
-    position: relative;}
-.banner { background-image: url(img/banner.jpg);
-background-size: cover; 
-font-family: 'Open Sans', sans-serif;
-padding-top: 15px; padding-bottom: 42px;
-}
-
-.shadow { background-size: cover;background-color: rgba(0,0,0,0.5);
-padding-top: 10px; padding-bottom: 42px;}
-.yeltxt {color: #FDF30C;font-family: open-sans, sans-serif;margin-bottom: 150px;}
-.yeltxt h3 {font-size: 26px; font-weight: 700;}
-.zzz {font-size: 26px; font-weight: 700;color: #FDF30C;}
-.yeltxt p {line-height: 24px; font-size: 20px;
-   }
-.hh1 {background-color:rgba(0,0,0,0.5); background-size: cover; padding-bottom: 30px;
- margin-bottom: 95px;}
-.hh1 h1 {font-size: 64px;line-height: 45px; font-weight: 700; color: #fff;
-    padding-top: 13px;}
-.hh1 p { color: #FDF30C; font-family: open-sans, sans-serif;
-  font-size: 46px;font-weight: 700;
-    line-height: 46px;}
-.whi { font-size: 24px;   color: #FFFFFF;
-    text-align: center;
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 700}
-.red {color: #EE1D24;}
-.plus img {margin-bottom: 10px; margin-top: 10px; text-align: center;}
-.plus {font-size: 16px;
-    line-height: 19px;
-    color: #FDF30C;
-    font-family: open-sans, sans-serif;}
-.plus p {margin-bottom: 20px;}
-.plus span {font-weight: bold;}
-.formban {    
-    width: 100%;
-    background-color: #FFFFFF;
-    border-radius:0px 0px 10px 10px;
+   
     
-    position: relative;
-    padding: 31px 11px 35.0465764331197px 12px;}
-.formban p {font-size: 16px;}
-.formban input[type="submit"] {    width: 304px;
-    height: 42px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #FFFFFF;
-    background-color: #F5C709;
-    border-radius: 1px;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;
-    position: relative;}
-.formban input[type="text"], input[type="tel"], input[type="email"] {    
-    width: 304px;
-    height: 42px;
-    padding-left: 25px;
-    border-width: 1px;
-    border-color: #DCDCDC; border-style: solid;
-    background-color: transparent;
-    position: relative;
-    display: block;
-    margin-left: 65px;}
-.formban input[type="text"] {
-	background-image: url(img/tip.png);
-	background-repeat: no-repeat;
-	background-position: left center;margin-bottom: 6px;
-}
-.formban input[type="email"] {
-	background-image: url(img/tip.png);
-	background-repeat: no-repeat;
-	background-position: left center;margin-bottom: 12px;
-}
-.formban input[type="tel"] {
-	background-image: url(img/tel.png);
-	background-repeat: no-repeat;
-	background-position: left center;margin-bottom: 6px;
-}
-.green {
-    width: 100%;
-    height: 78px;
-    background-color: #22B573;
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
-    margin-bottom: 0px;
-   }
-.green p{  
-    color: #FFFFFF;
-    font-size: 26px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 700;}
-.blok2 {padding-top: 26px; padding-bottom: 26px;}
-
-.blok2 p {
-    font-size: 32px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 400;}
-.blok2 img { margin: 0 auto; margin-top: 20px; margin-bottom: 20px; padding: 10px;
-	width: 100%;
-	max-width: 350px;
     
-    border: 2px; border-color: #DCDCDC;
-    border-style: solid;}
-.blok3 {background-image: url(img/baba.jpg); background-size: cover;	
-}
-.blok3 hr {margin-top: 32px;}
-.yell {line-height: 41px;
-    color: #FDF30C;
-    font-size: 34px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 800;}
-.whitxt {line-height: 22px;
-    color: #FFFFFF;
-    font-size: 18px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 300;
-    margin-bottom: 30px;}
-.blok4 {padding-top: 26px; padding-bottom: 26px;}
-.blok4 p {font-size: 14px;
-    font-family: open-sans, sans-serif;
-    font-weight: 300;}
-.hh2 {font-size: 19px; }
-.blok4 figure { text-align: center;
-	border:1px solid #DCDCDC; padding: 8px;}
-.blok4 img {width:100%; }
-.trait1 {margin-bottom: 10px;margin-top: 40px;}
-.trait2 {margin-bottom: 10px;margin-top: 14px;}
-.trait3 {margin-bottom: 10px;margin-top: 14px;}
-.txtt p {font-size: 18px;}
-.txtt li {font-size: 17px;
-    text-align: left;
-    line-height: 29px;
-    font-weight: 300;}
-.blok5 {background-image: url(img/banner.jpg); background-repeat: no-repeat; 
-	background-size:cover; padding-top: 30px;padding-bottom: 30px; }
-.blok5 h2 {font-size: 32px;
-    line-height: 38px;
-    color: #FDF30C;
-    font-family: open-sans, sans-serif;
-    font-weight: 400;}
-.blok5 p {font-size: 19px;
-    line-height: 48px;
-    color: #FFFFFF;
-    font-family: open-sans, sans-serif;
-    font-weight: 300;}
-.blok6 {padding-bottom: 40px;}
-.birka {background-image: url(img/birka.png); min-height: 100px;
-background-repeat: no-repeat;
-background-position: right; margin-top: 20px;}
-.blok6 img {width: 100%; max-width: 360px;margin: 0 auto; }
-.micr {width: 100%; max-width: 316px;}
-.birka p {line-height: 24px;
-    color: #FFFFFF;
-    font-size: 20px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;
-    padding-left: 30px;
-    padding-top: 24px;
-    }
-.non {text-decoration: line-through;}
-.blok7 {background-image: url(img/blok7.jpg);
-background-size: cover;
- color: #FDF30C;
-border-bottom: 4px solid #FDF30C;}
-
-.blok7 p{ font-size: 16px;
-    line-height: 19px;
-    font-weight: 400;}
-.bigl {font-size: 56px;
-    line-height: 67px;
-    font-weight: 400;}
-.blok8 {padding-top: 60px; line-height: 19px;border-bottom: 4px solid #FDF30C;}
-.blok8 figure {width: 242px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #FDF30C;
-    background-color: #475560;
-    border-radius: 10px;
-    position: relative;
-    padding-top: 8px; padding-bottom: 8px;
- margin-bottom: 40px; margin-top: 20px;}
-.blok8 figcaption { color: #fff;   font-size: 16px;}
-.blok9 {padding-top: 30px; padding-bottom: 40px;}
-.blok9 img {margin:0 auto; margin-top: 20px; margin-bottom: 20px; padding: 10px;
-	width: 100%;
-	max-width: 350px;
-    
-    border: 2px; border-color: #DCDCDC;
-    border-style: solid;}
-.blok10 {background-image:url(img/banner.jpg);
-background-repeat: no-repeat; background-size: cover; padding-top: 60px; 
-padding-bottom: 40px; }
-.b10 {border: 1px solid transparent; border-radius: 10px;
-background-color: rgba(0,0,0,0.5); padding-top:30px; padding-bottom:30px;}
-#countdown_dashboard {background: rgba(0,0,0,.7);
-    padding: 0 7px;
-
-    text-align: center;
-    position: relative;
-    width: 100%;}
-.dash {display: inline-block;
-position: relative;text-align: center; width: 80px;}
-.dash_title {font-size: 16px; color: #fff;}
-.digit {font:700 48px 'Fira Sans Bold',Arial,sans-serif;
-height: 65px; width:36px; line-height: 65px; float: left;color: #fff;
-text-align: center;position: relative; left: 7px; margin: 0 2px 0 0; }
-.dots {font:700 48px 'Fira Sans Bold',Arial,sans-serif;
-color: #fff;
-display: inline-block;
-left: 3px; bottom: 37px; position: relative;}
-.time_left {display: block; text-align: center; line-height: 19px;
-    color: #FFFFFF;
-    font-size: 16px; 
-    font-family: open-sans, sans-serif;
-    font-weight: 400;}
-.yelow { margin-bottom:80px;   line-height: 36px;
-    color: #FDF30C;
-    font-size: 30px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;}
-.zelen { font-size: 25px;
-    line-height: 30px;
-    color: #22B573;
-    font-family: open-sans, sans-serif;
-    font-weight: 700;
-    border-bottom:2px solid #fff;}
-.smallred {font-size: 21px;
-    line-height: 25px;
-    color: #EE1D24;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;}
-.formban2 {    
-    width: 100%;
-    background-color: #FFFFFF;
-    border-radius:0px 0px 10px 10px;
-    
-    position: relative;
-    padding: 31px 11px 35.0465764331197px 12px;}
-.formban2 p {font-size: 16px;}
-.formban2 input[type="submit"] {    width: 304px;
-    height: 42px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #FFFFFF;
-    background-color: #F5C709;
-    border-radius: 1px;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 600;
-    position: relative;}
-.formban2 input[type="text"], input[type="tel"], input[type="email"] {    
-    width: 304px;
-    height: 42px;
-    padding-left: 25px;
-    border-width: 1px;
-    border-color: #DCDCDC; border-style: solid;
-    background-color: transparent;
-    position: relative;
-    display: block;
-    margin-left: 65px;}
-.formban2 input[type="text"] {
-	background-image: url(img/tip.png);
-	background-repeat: no-repeat;
-	background-position: left center;margin-bottom: 6px;
-}
-.formban2 input[type="email"] {
-	background-image: url(img/tip.png);
-	background-repeat: no-repeat;
-	background-position: left center;margin-bottom: 12px;
-}
-.formban2 input[type="tel"] {
-	background-image: url(img/tel.png);
-	background-repeat: no-repeat;
-	background-position: left center;margin-bottom: 6px;
-}
-.green2 {
-    width: 100%;
-    height: 78px;
-    background-color: #22B573;
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
-    margin-bottom: 0px;
-   }
-.green2 p{  
-    color: #FFFFFF;
-    font-size: 26px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 700;}
-.footer {padding-bottom: 10px; padding-top: 10px;}
-.phone {background-image: url(img/phone.png);
-    background-repeat: no-repeat;
-	background-position: left;
-    padding-left: 26px;}
-.clock  {background-image: url(img/clock.png);
-    background-repeat: no-repeat;
-	background-position: left;
-    padding-left: 26px;
-font-size: 15px;}
-    </style>
     <!--styles of bootstrap -->
     <style type="text/css">
     	/*!
@@ -7219,41 +6772,397 @@ button.close {
 
     </style>
 
+<!--styles css-->
+    <style type="text/css">
+    	 
+/*подключение шрифтов*/
+@font-face { font-family: 'Open Sans';
+	src: url(fonts/OpenSans-Regular.ttf);
+}
+
+
+.banner { background-image: url(img/banner.jpg);
+background-size: cover; 
+font-family: 'Open Sans';
+padding-top: 15px; padding-bottom: 42px;
+}
+.tell {color:#FDF30C; }
+.shadow { background-size: cover;background-color: rgba(0,0,0,0.5);
+padding-top: 10px; padding-bottom: 42px;}
+.yeltxt {color: #FDF30C; margin-bottom: 150px;}
+.yeltxt h3 {font-size: 26px; font-weight: 700;}
+.zzz {font-size: 26px; font-weight: 700;color: #FDF30C;}
+.yeltxt p {line-height: 24px; font-size: 20px;
+   }
+.hh1 {background-color:rgba(0,0,0,0.5); background-size: cover; padding-bottom: 30px;
+ margin-bottom: 95px;}
+.hh1 h1 {font-size: 64px;line-height: 45px; font-weight: 700; color: #fff;
+    padding-top: 13px;}
+.hh1 p { color: #FDF30C;
+  font-size: 46px;font-weight: 700;
+    line-height: 46px;}
+.whi { font-size: 24px;   color: #FFFFFF;
+    text-align: center;
+    font-family: 
+    font-weight: 700}
+.red {color: #EE1D24;}
+.plus img {margin-bottom: 10px; margin-top: 10px; margin:0 auto;
+width: 100%; max-width:50px;}
+.plus {font-size: 16px;
+    line-height: 19px;
+    color: #FDF30C;
+    font-family: }
+.plus p {margin-bottom: 42px; margin-top: 5px;}
+.plus span {font-weight: bold;}
+.formban {    
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius:0px 0px 10px 10px;
+    
+    position: relative;
+    padding: 31px 11px 35.0465764331197px 12px;}
+.formban p {font-size: 16px;}
+.formban input[type="submit"] {    width: 304px;
+    height: 42px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    background-color: #F5C709;
+    border-radius: 1px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    position: relative;}
+.formban input[type="text"], input[type="tel"], input[type="email"] {    
+    width: 304px;
+    height: 42px;
+    padding-left: 25px;
+    border-width: 1px;
+    border-color: #DCDCDC; border-style: solid;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    margin-left: 65px;}
+.formban input[type="text"]:focus {
+	border-color: #000; border-style: solid;
+    background-color: #FFDAB9;
+}    
+.formban input[type="text"] {
+	background-image: url(img/tip.png);
+	background-repeat: no-repeat;
+	background-position: left center;margin-bottom: 6px;
+}
+.formban input[type="email"]:focus {
+	border-color: #000; border-style: solid;
+    background-color: #FFDAB9;
+}  
+.formban input[type="email"] {
+	background-image: url(img/tip.png);
+	background-repeat: no-repeat;
+	background-position: left center;margin-bottom: 12px;
+}
+.formban input[type="tel"]:focus {
+	border-color: #000; border-style: solid;
+    background-color: #FFDAB9;
+}  
+.formban input[type="tel"] {
+	background-image: url(img/tel.png);
+	background-repeat: no-repeat;
+	background-position: left center;margin-bottom: 6px;
+}
+.green {
+    width: 100%;
+    height: 78px;
+    background-color: #22B573;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    margin-bottom: 0px;
+   }
+.green p{  
+    color: #FFFFFF;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 700;}
+.blok2 {padding-top: 26px; padding-bottom: 26px;font-family: 'Open Sans'; color: #000;}
+
+.blok2 p {
+    font-size: 32px;
+    text-align: center;
+    
+    font-weight: 400;}
+.blok2 img { margin: 0 auto; margin-top: 20px; margin-bottom: 20px; padding: 10px;
+	width: 100%;
+	max-width: 350px;
+    border: 2px; border-color: #DCDCDC;
+    border-style: solid;}
+.blok3 {background-image: url(img/baba.jpg); background-size: cover;	
+font-family: 'Open Sans';}
+.blok3 hr {margin-top: 32px;}
+.yell {line-height: 41px;
+    color: #FDF30C;
+    font-size: 34px;
+    text-align: center;
+    
+    font-weight: 800;}
+.whitxt {line-height: 22px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    
+    font-weight: 300;
+    margin-bottom: 30px;}
+.blok4 {padding-top: 26px; padding-bottom: 26px;font-family: 'Open Sans';color: #000;}
+.blok4 p {font-size: 14px;
+    
+    font-weight: 300;}
+.hh2 {font-size: 19px; text-align: center; }
+.blok4 figure { text-align: center;
+	border:1px solid #DCDCDC; padding: 8px;}
+.blok4 img {width:100%; }
+.trait1 h4,.trait1 p,.trait2 h4,.trait2 p,.trait3 h4,.trait3 p {
+color: #000; text-align: left;}
+.trait1 h4, .trait2 h4, .trait3 h4 {font-size: 15px;
+    line-height: 18px; font-weight: 600;}
+.trait1 {margin-bottom: 10px;margin-top: 40px;}
+.trait2 {margin-bottom: 10px;margin-top: 14px;text-align: left;}
+.trait3 {margin-bottom: 10px;margin-top: 14px;text-align: left;}
+.txtt p {font-size: 18px;}
+.txtt li {font-size: 17px;
+    text-align: left;
+    line-height: 29px;
+    font-weight: 300;}
+.blok5 {background-image: url(img/banner.jpg); background-repeat: no-repeat; 
+	background-size:cover; padding-top: 30px;padding-bottom: 30px;
+	font-family: 'Open Sans'; }
+.blok5 h2 {font-size: 32px;
+    line-height: 38px;
+    color: #FDF30C;
+    
+    font-weight: 400;}
+.blok5 p {font-size: 19px;
+    line-height: 48px;
+    color: #FFFFFF;
+    
+    font-weight: 300;}
+.blok6 {padding-bottom: 40px; font-family:'Open Sans'; color: #000;}
+.birka {background-image: url(img/birka.png); min-height: 100px;
+background-repeat: no-repeat;
+background-position: right; margin-top: 20px;}
+.blok6 img {margin: 0 auto; width: 100%; max-width: 360px; }
+
+.birka p {line-height: 24px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding-left: 30px;
+    padding-top: 24px;
+    }
+.non {text-decoration: line-through;}
+.blok7 {background-image: url(img/blok7.jpg);
+	background-attachment: fixed;
+font-family: 'Open Sans';
+background-size: cover;
+ color: #FDF30C;
+border-bottom: 4px solid #FDF30C;}
+
+.blok7 p{ font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;}
+.bigl {font-size: 56px;
+    line-height: 67px;
+    font-weight: 400;}
+.blok8 {padding-top: 60px; line-height: 19px;
+	border-bottom: 4px solid #FDF30C;
+    font-family: 'Open Sans';}
+.blok8 h2 {color: #000;}
+.blok8 figure {width: 242px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FDF30C;
+    background-color: #475560;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    position: relative;
+    padding-top: 8px; padding-bottom: 8px;
+ margin-bottom: 40px; margin-top: 20px;}
+.blok8 figcaption { color: #fff;   font-size: 16px;}
+.br {padding-top: 5px;}
+.future {margin: 0 auto;}
+.blok9 {padding-top: 30px; padding-bottom: 40px;font-family: 'Open Sans'; color: #000;}
+.blok9 img {margin:0 auto; margin-top: 20px; margin-bottom: 20px; padding: 10px;
+	width: 100%;
+	max-width: 350px;
+    
+    border: 2px; border-color: #DCDCDC;
+    border-style: solid;}
+.blok10 {background-image:url(img/banner.jpg);
+background-repeat: no-repeat; background-size: cover; padding-top: 60px; 
+padding-bottom: 40px; font-family: 'Open Sans';}
+.b10 {border: 1px solid transparent; border-radius: 10px;
+background-color: rgba(0,0,0,0.5); padding-top:30px; padding-bottom:30px;}
+#countdown_dashboard {
+    padding: 0 7px;
+
+    text-align: center;
+    position: relative;
+    width: 100%;}
+.dash {display: inline-block;
+position: relative;text-align: center; width: 80px;}
+.dash_title {font-size: 16px; color: #fff;}
+.digit {font:700 48px 'Fira Sans Bold',Arial,sans-serif;
+height: 65px; width:36px; line-height: 65px; float: left;color: #fff;
+text-align: center;position: relative; left: 7px; margin: 0 2px 0 0; }
+.dots {font:700 48px 'Fira Sans Bold',Arial,sans-serif;
+color: #fff;
+display: inline-block;
+left: 3px; bottom: 37px; position: relative;}
+.time_left {display: block; text-align: center; line-height: 19px;
+    color: #FFFFFF;
+    font-size: 16px; 
+    font-family: 'Open Sans';
+    font-weight: 400;}
+.yelow { margin-bottom:80px;   line-height: 36px;
+    color: #FDF30C;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;}
+.zelen { font-size: 25px;
+    line-height: 30px;
+    color: #22B573;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    border-bottom:2px solid #fff;}
+.smallred {font-size: 21px;
+    line-height: 25px;
+    color: #EE1D24;
+    font-family: 'Open Sans';
+    font-weight: 600;}
+
+.footer {background-color: #09090a;
+    padding: 40px 0; }
+.copyright-wrap p{ font: 700 14px/18px 'Open Sans',Arial,sans-serif;
+    color: #fff;
+}
+.foot-tel-wrap a {
+    text-align: right;
+    font: 700 30px 'Open Sans',Arial,sans-serif;
+    line-height: 36px;
+    display: block;
+    color: #fff;
+}
+.politic a {
+    text-transform: uppercase;
+    font: 700 12px 'Open Sans',Arial,sans-serif;
+    color: #fff;
+}
+.support p {
+    text-align: center; 
+    text-transform: uppercase;
+    font: 700 12px 'Open Sans',Arial,sans-serif;
+    color: #fff; 
+}
+    </style>
+
+
+<!--медиазапросы -->
     <style type="text/css">
     	input[type="submit"]:hover {background-color: #FF8C00;}
-    	hr{
-	height: 2px; color: #000; margin-bottom: 46px; background-color:#000; }
+    	hr{ height: 2px; color: #000; margin-bottom: 46px; background-color:#000; }
 	    .blok5 hr {height: 1px; color: #000; margin-bottom: 46px; background-color:#fff;}
-	    @media (max-width: 991px){.yeltxt {margin-bottom: 30px;}
-            .yeltxt h3{font-size: 22px; }
-	        .hh1 h1{font-size: 35px;}
-	        .whi {font-size: 26px;}
-	        .hh1 p{font-size: 40px;}
-	        .formban input[type="text"], input[type="tel"], input[type="email"], input[type="submit"] {width: 100%; min-width: 265px; margin-left: 0px;}
-	        .formban input[type="submit"] {width: 265px;}
-	        .blok2 img {width: 100%; min-height: 270px;} 
-	        iframe {width: 100%; min-height: 300px;}
-	       
-	        .yelow {font-size: 25px;}  
-            .formban2 input[type="text"], input[type="tel"], input[type="email"], input[type="submit"] {width: 100%; min-width: 265px; margin-left: 0px;}
-	        .formban2 input[type="submit"] {width: 100%; min-width: 265px;}
-	        .blok2 img {width: 100%; min-height: 270px;}
+	    @media (min-width: 1024px) {
+	    	.banner h1 {font-size: 60px;}
+	    	.plus img {max-width: 50px; width: 100%;}
+	    	.formban input[type="text"], input[type="tel"], input[type="email"] 
+	    	{width: 86%; margin: 0 auto; margin-bottom: 5px;}
+	    	.blok5 h2, .blok6 h2 {font-size: 45px;}
 
 	    }
-        @media (min-width: 718px) and (max-width: 991px;) {
-        	.birka {margin-right: 360px;}
-        } 
-        @media (max-width:600px) {
-        	.xs {color: red;}
-        	.green {background: transparent; margin-bottom: 98px;}
-        	.green p {color: #FDF30C; font-size: 30px; }
-        	.formban {border-radius: 10px;}
-        } 
-        @media (max-width: 334) {
-        	.dashboard {width: 100%; min-width: 302px;font-size: 40px;}
+	    @media (min-width: 992px) and (max-width: 1023px) {
+	    	.banner h1 {font-size: 60px;}
+            .formban input[type="text"], input[type="tel"], input[type="email"]
+	    	{width: 86%; margin: 0 auto; margin-bottom: 5px;}
+	    }
+	    @media (min-width: 768px) and (max-width: 991px) {
+	    	.green, .formban {width: 95%; margin: 0 auto;}
+            .banner h1 {font-size: 50px;}
+	    	.formban input[type="text"], input[type="tel"], input[type="email"]
+	    	{width: 70%; margin: 0 auto; margin-bottom: 5px;}
+	    	.formban input[type="submit"] {width: 70%; margin: 0 auto;}
+        	.foot-tel-wrap a {font-size: 25px;}
         	
-        }
 
+	    }
+
+	    @media (min-width: 768px) and (max-width: 1023px) {
+	    	.plus img {margin-top: 5px; margin-bottom: 10px;}
+	    	.block3 iframe {max-width: 530px; width: 100%;}
+	    	.blok6 img {width: 100%; max-width: 310px;}
+	    	.birka {background-position: center;}
+	    	.blok8 figure {margin: 0 auto; margin-bottom: 15px;}
+	    	.future {text-align: center;}
+	    	.yellow {margin-bottom: 10px;}
+	    	#countdown_dashboard {margin-bottom: 20px;}
+
+        	
+
+        }
+        @media (min-width: 532px) and (max-width: 767px) {
+        	.green {min-height: 100px;}
+        }
+        @media (min-width: 387px) and (max-width: 531px) {
+        	.green {min-height: 150px;}
+        }
+        @media (max-width: 386px) {
+        	.green {min-height: 170px;}
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+        	.yeltxt {margin-bottom: 10px;}
+        	.hh1 { margin-bottom: 15px;}
+        	.hh1 h1 {font-size: 37px; padding-top: 0px;}
+        	.hh1 p {line-height: 30px;}
+        	.formban input[type="tel"] {margin: 0 auto; margin-bottom: 5px;
+        		width: 100%; max-width: 260px; }
+        	.formban input[type="submit"] {width: 100%;max-width: 260px;margin: 0 auto; margin-bottom: 5px;}
+        	.blok2 p {font-size: 25px;}
+        	.blok3 iframe {width: 100%; max-width:290px;}
+        	.txtt h2 {font-size: 30px;font-weight: 600;}
+        	.txtt h3 {font-size: 20px; font-weight: 600;}
+        	.txtt li {line-height: 20px; font-size: 17px;}
+        	.blok6 h2 {font-size: 25px;font-weight: 600;}
+        	.blok6 hr {margin-bottom: 10px;}
+        	.blok6 img {width: 100%; max-width: 265px;}
+        	.blok8 {padding-top: 20px;}
+        	.future {padding-left: 25px;}
+        	.blok8 figure {margin-bottom: 10px;}
+        	.blok9 {padding-top: 15px; padding-bottom: 15px;}
+        	.blok9 h2 {font-size: 27px;}
+        	.blok9 img {width: 100%; max-width: 265px;}
+        	.blok9 hr {margin-bottom: 10px;}
+        	.blok10 {padding-top: 15px; padding-bottom: 15px;}
+        	.yelow {line-height: 26px; font-size: 28px; margin-bottom: 15px;}
+        	.zelen {font-size: 20px; line-height: 27px;}
+        	.xs {color: red;}
+        	.green {background: transparent;}
+        	.green p {color: #FDF30C; font-size: 30px; }
+        	.formban {border-radius: 10px; width: 90%; margin: 0 auto;}
+        	.formban p{font-size: 14px;}
+        	.digit {font-size: 38px;}
+        	.dots {font-size: 38px;}
+        	.dash {width: 78px;}
+        	.foot-tel-wrap a {text-align: center;}
+        	
+            
+        }
+        @media only screen and (max-width: 768px) {
+        .footer .copyright-wrap img {width: 70%; margin: 0 auto;}
+        .fot-line .politic a {text-align: center;}
+}
     </style>
     <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="screen">
 </head>
@@ -7288,7 +7197,7 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 }">
                                 <p class="managerobform">Заполните форму обратной связи – наш специалист свяжется с вами в течение 1 часа</p>
                                 <input type="text" class="bonca name hidden-xs hidden-sm" name="name" placeholder="Введите ФИО"><br />
-                                <input type="tel" class="bonca phone" id="phone2" name="phone" placeholder="X-XXX-XXX-XX-XX"  required ><br />
+                                <input type="tel" class="bonca phone" id="phone1" name="phone" placeholder="X-XXX-XXX-XX-XX"  required ><br />
                                 <input type="email" class="bonca email hidden" name="email" placeholder="E-mail (желательно)" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"><br />
                                 <select class="ea_select ea_pay_mode" name="pay_mode" style="display:none;" ><option value="3"  >Наложенный платеж</option></select>
                                 <input type="hidden" id="tovar_id" name="tovar_id" value="361648">
@@ -7338,7 +7247,7 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 }">
                                 <p class="managerobform">Заполните форму обратной связи – наш специалист свяжется с вами в течение 1 часа</p>
                                 <input type="text" class="bonca name hidden-xs hidden-sm" name="name" placeholder="Введите ФИО"><br />
-                                <input type="tel" class="bonca phone" id="phone3" name="phone" placeholder="X-XXX-XXX-XX-XX"  required ><br />
+                                <input type="tel" class="bonca phone" id="phone2" name="phone" placeholder="X-XXX-XXX-XX-XX"  required ><br />
                                 <input type="email" class="bonca email hidden" name="email" placeholder="E-mail (желательно)" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"><br />
                                 <select class="ea_select ea_pay_mode" name="pay_mode" style="display:none;" ><option value="3"  >Наложенный платеж</option></select>
                                 <input type="hidden" id="tovar_id" name="tovar_id" value="361649">
@@ -7362,43 +7271,6 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
                 </div>
             </div>
 
-
-<div class="modal fade" id="myModal">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<p>Укажите Ваши данные.<br>
-                  Менеджер свяжется в ближайшее время.</p>
-			</div><!--end modal-header-->
-			<div class="modal-body">
-				<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 text-center">
-				<form action="https://borisovden.e-autopay.com/checkout/save_order_data.php" method="post" onsubmit="var re = /^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)[\d\- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;} else{
-         gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); return true;}">
-                    <input type="text" name="name" placeholder="Введите имя">
-    	            <input type="tel" name="phone" placeholder="Введите номер телефона">
-					<input type="hidden" name="ordername" value="Первый экран">
-                    <input id="tovar_id" type="hidden" name="tovar_id" value="361647">
-                    <input type="hidden" name="additional_field1" value="roistat_visit:2561560">
-                    <input type="hidden" name="form_id" value="13986">
-				</form></div>
-				</div><!-- end row -->
-			</div> <!--end fluid-->
-			</div><!--end modal-body-->
-			<div class="modal-footer">
-				<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-primary">Заказать звонок</button>
-				</div>
-				</div><!-- end row -->
-			</div> <!--end fluid-->
-			</div><!--end modal-footer-->
-		</div><!-- end modal-content-->
-	</div><!--end modal-dialog-->
-</div><!-- end modal-->
 <section class="banner">
 <div class="container">
 	<div class="row">
@@ -7414,7 +7286,7 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 		</div>
 	</div>	<!-- end media md5 -->
 	<div class="col-md-3 col-sm-5 hidden-xs  col-md-offset-2">
-		<h3><a href="#myModal" class="zzz" data-target="#myModal" data-toggle="modal"  > Бесплатный звонок</a> <br> 8-800-350-26-06</h3>
+		<h3> Бесплатный звонок <br> <a class="tell" href="tel+78003502606"> 8-800-350-26-06</a></h3>
 	</div>
 	<div class="col-md-1"></div>
     </div> <!--end yeltxt-->
@@ -7441,21 +7313,24 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 	</div><!-- end hh1-->  
 <div class="container">
 	<div class="row">
-	<div class="col-md-5 col-sm-6 hidden-xs col-md-offset-1">
+	<div class="col-md-5 col-sm-5 hidden-xs col-md-offset-1">
 		<div class="plus">
 		<div class="row">
-		<div class="col-md-4"> <img src="img/ebf0291fe360f69a648d27dcea65787b.png"></div>
-		<div class="col-md-8"> <p> <span >Гарантия обмена товара! </span>
+		<div class="col-md-3 col-sm-3"> 
+			<img class="img-responsive" src="img/ebf0291fe360f69a648d27dcea65787b.png"></div>
+		<div class="col-md-9 col-sm-9"> <p> <span >Гарантия обмена товара! </span>
 		</p> </div>	
 		</div><!--end row -->
 		<div class="row">
-		<div class="col-md-4"> <img src="img/list1.png"></div>
-        <div class="col-md-8"> <p><span >Выбор автолюбителей 2017! </span><br><br> Новая модель в ультратонком корпусе с улучшенным качеством видеосъемки и универсальным креплением
+		<div class="col-md-3 col-sm-3"> 
+			<img class="img-responsive" src="img/list1.png"></div>
+        <div class="col-md-9 col-sm-9"> <p><span >Выбор автолюбителей 2017! </span><br><br> Новая модель в ультратонком корпусе с улучшенным качеством видеосъемки и универсальным креплением
         </p> </div>	
 		</div><!--end row -->
 		<div class="row">
-		<div class="col-md-4"> <img src="img/hend1.png"></div>
-        <div class="col-md-8"> <p><span >Фабричное качество!</span> <br><br> БЕЗ ПОСРЕДНИКОВ! Низкие цены на все товары. Работаем в сфере автоэлектроники более 5 лет</p> 
+		<div class="col-md-3 col-sm-3"> 
+			<img class="img-responsive" src="img/hend1.png"></div>
+        <div class="col-md-9 col-sm-9"> <p><span >Фабричное качество!</span> <br><br> БЕЗ ПОСРЕДНИКОВ! Низкие цены на все товары. Работаем в сфере автоэлектроники более 5 лет</p> 
         </div>	
     </div> <!-- end plus-->
 		</div><!--end row -->
@@ -7469,10 +7344,10 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
     	<form action="https://borisovden.e-autopay.com/checkout/save_order_data.php" method="post" onsubmit="var re = /^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)[\d\- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;} else{
          gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); return true;}">
         <p>АВТОМОБИЛЬНЫЙ ВИДЕОРЕГИСТРАТОР ЗЕРКАЛО</p>  
-    	<input type="text" name="name" id="phone1" class="hidden-xs" placeholder="Введите имя">
-    	<input type="tel" name="phone" id="phone2" placeholder="Введите номер телефона">
-    	<input type="email" name="email" id="phone3" class="hidden-xs" placeholder="Введите e-mail">
-    	<input type="submit" name="submit" id="phone4" class="btn" value="Заказать">
+    	<input type="text" name="name" class="hidden-xs" placeholder="Введите имя">
+    	<input type="tel" name="phone" id="phone3" placeholder="Введите номер телефона">
+    	<input type="email" name="email" class="hidden-xs" placeholder="Введите e-mail">
+    	<input type="submit" name="submit"  class="btn" value="Заказать">
         <input type="hidden" name="ordername" value="Первый экран">
         <input id="tovar_id" type="hidden" name="tovar_id" value="361647">
         <input type="hidden" name="additional_field1" value="roistat_visit:2561560">
@@ -7529,7 +7404,7 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 	</div>
       </div><!-- end row-->
     <div class="row">
-    	<div class="col-md-12 text-center">
+    	<div class="col-md-12 col- text-center">
     	<div class="vidos">
     	<iframe width="560" height="315" src="https://www.youtube.com/embed/zXk4PduoS7E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div> <!--end vidos-->
@@ -7552,9 +7427,9 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 		<p><span class="hh2">зеркала-видеорегистратора VEHICLE BLACKBOX </span></p>	
 	</div>
 </div><!-- end row-->
-    
-    <div class="row">
     <div class="trait1">
+    <div class="row">
+    
     	<div class="col-md-4 col-xs-12">
     		<figure>
     			<p><img src="img/bg11.jpg"></p>
@@ -7579,9 +7454,9 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
     		<p>Удобный обзор заднего вида. Простое переключение между режимами переднего и заднего вида с помощью одной кнопки. Есть отдельный режим "Картинка в картинке". Поможет Вам припарковаться быстро и правильно.</p>
     		</figcaption></figure>
     	</div>
-    </div><!--end trait1-->
-    </div><!-- end row-->	
     
+    </div><!-- end row-->	
+    </div><!--end trait1-->
     <div class="trait2">	
     <div class="row">
     	<div class="col-md-4 col-xs-12">
@@ -7781,7 +7656,7 @@ gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); retu
 	<div class="col-md-12"><hr></div>
 </div> <!-- end row-->
 <div class="row">
-	<div class="col-md-6 col-sm-12 col-xs-12">
+	<div class="col-md-6 col-sm-12 col-xs-12 text-center">
 		<h2>КОМПЛЕКТАЦИЯ</h2>
 		<p>Зеркало - видеорегистратор full hd 1080p<br>
 Дополнительная камера заднего вида<br>
@@ -7807,7 +7682,7 @@ Usb-кабель<br>
 	</div>
 </div><!-- end row--> 
 <div class="row">
-	<div class="col-md-4 col-md-offset-2">
+	<div class="col-md-4 col-sm-6 col-md-offset-3 text-center">
     <h3>Карту памяти MicroSD 32gb с адаптером! Сlass 10</h3>
     
     <div class="row">	
@@ -7817,11 +7692,9 @@ Usb-кабель<br>
     990.00 руб</p></div>  
   </div><!-- end birka-->    
      </div><!-- end row-->
-
-
     </div><!-- end md4of-->
     
-    <div class="col-md-6">
+    <div class="col-md-3 col-sm-5 text-center">
     	<img class="micr" src="img/32gb.png">
     </div>
 
@@ -7860,6 +7733,7 @@ Usb-кабель<br>
     		<p>Работая с нашей компанией вы  получаете не только высококачественную и оперативную клиентскую поддержку, но еще и скидку 20% постоянного клиента!</p>
     	</div>
      </div><!-- end row-->
+     <div class="future">
     <div class="row">
     	<div class="col-md-4 text-center">
     		<figure>
@@ -7870,7 +7744,7 @@ Usb-кабель<br>
     	<div class="col-md-4 text-center">
     		<figure>
     			<p><img src="img/heart.png"></p>
-    			<figcaption>Забота о клиентах, оперативная обратная связь, работаем 24/7</figcaption>
+    			<figcaption class="br"> Забота о клиентах, оперативная обратная связь, работаем 24/7</figcaption>
     		</figure>
     	</div>
     	<div class="col-md-4 text-center">
@@ -7882,6 +7756,7 @@ Usb-кабель<br>
     	</div>
     
     </div><!-- end row-->
+</div> <!--end future -->
 </div><!-- end container-->
 </section><!-- end blok8-->
 <section class="blok9">
@@ -7948,18 +7823,18 @@ Usb-кабель<br>
 		</div><!-- end row-->
 	
 </div><!--end md5ofset-->
-<div class="col-md-5 col-sm-10 col-xs-12 text-center">
-	<div class="green2">
+<div class="col-md-5 col-sm-12 col-xs-12 text-center">
+	<div class="green">
     	<p>Оставьте заявку сейчас и получите разветвитель в подарок</p>
           </div>
-    	<div class="formban2">
+    	<div class="formban">
     	<form action="https://borisovden.e-autopay.com/checkout/save_order_data.php" method="post" onsubmit="var re = /^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)[\d\- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;} else{
          gtag('event', 'zakazal', {'event_category':'send','event_action':'click'}); return true;}">
         <p>АВТОМОБИЛЬНЫЙ ВИДЕОРЕГИСТРАТОР ЗЕРКАЛО</p>  
-    	<input type="text" name="name" id="phone1" placeholder="Введите имя">
-    	<input type="tel" name="phone" id="phone2" placeholder="Введите номер телефона">
-    	<input type="email" name="email" id="phone3" placeholder="Введите e-mail">
-    	<input type="submit" name="submit" id="phone4" value="Заказать" class="btn">
+    	<input type="text" name="name" class="hidden-xs"  placeholder="Введите имя">
+    	<input type="tel" name="phone" id="phone4" placeholder="Введите номер телефона">
+    	<input type="email" name="email" class="hidden-xs"  placeholder="Введите e-mail">
+    	<input type="submit" name="submit"  value="Заказать" class="btn">
     	<input type="hidden" name="ordername" value="Первый экран">
         <input id="tovar_id" type="hidden" name="tovar_id" value="361647">
         <input type="hidden" name="additional_field1" value="roistat_visit:2561560">
@@ -7978,30 +7853,142 @@ Usb-кабель<br>
 </section><!-- end blok10-->
 <section class="footer">
 	<div class="container">
-	<div class="row">
-	   <div class="foot">
-       <div class="media col-md-5 col-sm-12 col-xs-12 col-md-offset-1">
-		<a href="#" class="media-left">
-			<img src="img/full.jpg">
-		</a>
-		<div class="media-body">
-			<h3 class="media-heading">Магазин автоэлектроники </h3>
-			<p>Автомобильные видеорегистраторы<br>
-				с доставкой по всей России</p></div>
-		</div>
-	    </div><!-- end foot-->
-
-        <div class="col-md-3 col-sm-12 col-xs-12 col-md-offset-2">
-		<h3 class="phone"> 8-800-350-26-06</h3>
-		<p class="clock">С 08:00 до 22:00 без перерывов </p>
-	                </div>
-	<div class="col-md-1"></div>
-    </div><!-- end row-->
-     </div><!-- end container-->
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="copyright-wrap">
+                        <p class="hiddden-sm hidden-xs">© САЙТ ЗАЩИЩЕН АВТОРСКИМИ ПРАВАМИ, ЛЮБОЕ КОПИРОВАНИЕ МАТЕРИАЛОВ САЙТА БЕЗ СОГЛАСОВАНИЯ С ПРАВООБЛАДАТЕЛЕМ ВЛЕЧЕТ К УГОЛОВНОЙ ОТВЕТСТВЕННОСТИ (СТ. 146 УК РФ). ЛЮБОЕ КОПИРОВАНИЕ ИНФОРМАЦИИ ЗАПРЕЩЕНО.</p>
+                        <img class="img-img" src="img/addr2.png">
+                <img class="img-img" src="img/addr.png">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="foot-tel-wrap">
+                        <a href="tel:+78003502606">8-800-350-26-06</a>
+                        <a href="tel:+74993502606">7-499-350-26-06</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row fot-line">
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div class="politic"><a href="politic.html" target="_blank">Политика конфиденциальности</a></div>
+                </div> 
+                <div class="col-md-5 col-sm-6 col-xs-12 text-center">
+                    <div class="support"><p>Служба поддержки: <span>helpmagazina@gmail.com</span></p></div>
+                </div>
+                <div class="col-md-4 hiddden-sm hidden-xs"></div>
+            </div> 
+        </div>
      </section><!-- end footer-->
 
 
+<link rel="stylesheet" type="text/css" href="css/ouibounce.min.css">
+<!-- стили оуибонс-->
+<style>
+.ouibounce-init{font-family:'Open Sans', sans-serif;display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;}
+.ouibounce-init .underlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.5);cursor:pointer;-webkit-animation:fadein 0.5s;animation:fadein 0.5s;}
+.ouibounce-init .ouibounce-modal{width:100%;height:auto;max-height:690px;background-color:#e5e5e5;z-index:1;position:absolute;margin:auto;top:0;right:0;bottom:0;left:0;border-radius:4px;-webkit-animation:popin 0.3s;animation:popin 0.3s;max-width:1200px;border-radius:30px;}
+.ouibounce-init .ouibounce-modal-title{font-size:18px;background-color:#e5e5e5;color:#000;padding:10px;margin:0;border-radius:4px 4px 0 0;text-align:center;margin:0 auto;max-width:95%;}
+.ouibounce-init h3{color:#ff1500;font-size:42px;margin:16px;text-transform:uppercase;font-weight:normal;font-family:MyriadProRegular;max-width:100%;}
+.ouibounce-init .ouibounce-modal-body{padding:0px 35px;font-size:0.9em;}
+.ouibounce-init form{text-align:center;margin-top:15px;}
+.ouibounce-init form input[type=text]{padding:12px; padding-top: 0 !important; padding-bottom: 0 !important;max-width:300px;border:1px solid #806f6f;-webkit-font-smoothing:antialiased;margin-bottom:10px;height:40px !important;width:100%;background:#e1e1e1;}
+.ouibounce-init form input[type=tel]{margin: 0 auto; padding:12px; padding-top: 0 !important; padding-bottom: 0 !important;max-width:300px;border:1px solid #806f6f;-webkit-font-smoothing:antialiased;margin-bottom:10px;height:40px !important;width:100%;background:#e1e1e1;}
+.ouibounce-init form input[type=email]{padding:12px; padding-top: 0 !important; padding-bottom: 0 !important;max-width:300px;border:1px solid #806f6f;-webkit-font-smoothing:antialiased;margin-bottom:10px;height:40px !important;width:100%;background:#e1e1e1;}
+.ouibounce-init form input[type=submit]{text-transform:uppercase;font-size:28px;border-radius:0px;background-color:#ED022D;border:none;cursor:pointer;-webkit-font-smoothing:antialiased;width:100%;max-width:300px;margin:0 auto;font-family:MyriadProRegular;border:2px solid #f17479;height:65px;padding:0px;line-height: 65px;}
+.ouibounce-init .modal-footer{position:absolute;bottom:20px;text-align:center;width:100%;}
+.ouibounce-init .ouibounce-modal-footer p{text-transform:capitalize;cursor:pointer;display:inline;border-bottom:1px solid #344a5f;}
+.ouibounce-init .down-title{
+    padding-bottom:40px;
+    font-size: 37px;
+}
+.ouibounce-init .closed {
+    position: absolute;
+    padding: 0;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 20px;
+    -webkit-transition: background-color ease .7s;
+    transition: background-color ease .7s; }
 
+.ouibounce-init .closed:before {
+    color: red;
+    content: '\2715';
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 44px;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
+    left: 4px;
+}
+
+.body-fixed {
+    position: fixed !important;
+    width: 100% !important;
+}
+@media (max-width: 900px) {
+    #popup__toggle {
+        transform: scale(0.5);
+        /*bottom: -20px;*/
+        right: -30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .plusik {
+        font-size: 70px !important;
+    }
+}
+
+h3.zak {
+    color: #000 !important;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.ouibounce-init .down-title {
+    padding-bottom: 0 !important;
+}
+
+.voprosik {
+    top: 152px !important;
+}
+.cc{
+    text-decoration: none;
+    color:#fff;
+}
+.cc:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.textobm {
+    margin-top: 80px !important;
+}
+
+@media (min-width:300px) and (max-width:680px){
+    .ouibounce-init form input[type=submit]{
+        font-size:22px;
+    }
+    .ouibounce-init .down-title{
+        padding-bottom:0px;
+        font-size: 20px;
+    }
+    .ouibounce-init h3{
+        font-size: 23px;
+    }
+}
+</style>
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
@@ -8013,11 +8000,11 @@ Usb-кабель<br>
 <script src="js/jquery.countdown.js"></script>
 <script type="text/javascript">
    jQuery(function($){
-     $("#phone1").mask("9(999) 999-9999");
+    $("#phone1").mask("9(999) 999-9999");
      $("#phone2").mask("9(999) 999-9999");
      $("#phone3").mask("9(999) 999-9999");
      $("#phone4").mask("9(999) 999-9999");
-     });
+ });
     </script>
 <script type="text/javascript">
     TimeMe.initialize();
